@@ -6,21 +6,27 @@
 <meta name="keywords" content="Ostereier, Ostern, Harry, Potter, HP-FC">
 <meta name="description" content="In der Ostereiersuche des HP-FCs hat der Osterhase viele Ostereier versteckt. Finde die Oster-Eier in den selbsgemalten Bildern um zu sehen, was sich hinter ihnen verbirgt! Es gibt Geschichten, Gedichte, Bastelanleitungen und Backrezepte zu finden. Findest du alle Eier?">
 <script src="../../../js/ostern/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+<link rel="import" href="../../../js/ostern/bower_components/polymer/polymer.html">
+<link rel="import" href="../../../js/ostern/bower_components/polymer/lib/elements/dom-if.html">
 <link rel="import" href="../../../js/ostern/oster-projekt.html">
+<link rel="import" href="../../../js/ostern/oster-bild.html">
+<link rel="import" href="../../../js/ostern/oster-text.html">
+<link rel="import" href="../../../js/ostern/oster-ei.html">
 </head>
 
-<body unresolved>
+<body>
 	<!--[if lt IE 10]><div style="background-color: #ebebeb;">Dein Browser unterstützt die Ostereiersuche leider nicht. Bitte verwende einen modernen Browser.</div><![endif]--><!--[if gte IE 10]> -->
-	
+	<oster-hpfc-menu></oster-hpfc-menu>
 	<oster-projekt
 		headerlogo="../../../img/ostern/2017/logo.gif"
 		impressumhref="impressum.html"
-		cookiename="ostern2017">
+		cookiename="ostern2018">
 		<h1>HP-FC – Ostereiersuche 2017</h1>
-
-		<oster-bild src="../../../img/ostern/2017/rav-suchbild.jpg">
+		<oster-bild slot="oster-bild" src="../../../img/ostern/2017/rav-suchbild.jpg">
 			<h2>Ravenclaw</h2>
-			<oster-ei top=243 left=258 height=18 width=13>
+			<oster-ei slot="oster-ei" top="243" left="258" height="18" width="13"></oster-ei> 
+			
+			<oster-text slot="oster-text">
 				<h3>Ostern – gestern und heute</h3>
 				<h4>Ostern – Geschichte und Geschichten rund um das Osterfest.</h4>
 
@@ -100,11 +106,14 @@
 					denn so ein Hasentier legt nicht nur zweierlei Eier.“ <br>
 					Lacht der Opa und gab es munter und fröhlich kund, <br>
 					die Kinder störte es nicht und auch nicht die Feier.</p>
-			</oster-ei>
+			</oster-text>
+			
 		</oster-bild>
-		<oster-bild src="../../../img/ostern/2017/sly-suchbild.jpg">
+		<oster-bild slot="oster-bild" src="../../../img/ostern/2017/sly-suchbild.jpg">
 			<h2>Slytherin</h2>
-			<oster-ei top=2 left=30 height=27 width=21>
+			<oster-ei slot="oster-ei" top="2" left="30" height="27" width="21"></oster-ei>
+			
+			<oster-text slot="oster-text">
 				<h3>Der große Zauberbackwettbewerb</h3>
 				<p>Ottilie Zucker konnte kaum schlafen, denn morgen am 12.4. 2030 sollte der große Zauberbackwettbewerb stattfinden. Obwohl sie schon viele Stunden geübt hatte, war ihr doch vor Aufregung etwas mulmig zu Mute. Schließlich sollte es der erste offizielle Zauberbackwettbewerb seit der schon fast märchenhaften Überwindung der Ausnahme von Lebensmitteln in Gamps Gesetz der elementaren Transfiguration sein.</p>
 				<p>Das war damals im Jahre 2016 schon eine sehr unerwartete Entdeckung, der wie so oft ein Zufall zugrunde lag. Ottilie wurde ganz warm ums Herz, als sie an diesen besonderen Tag zurückdachte.</p>
@@ -176,11 +185,13 @@
 					Mit ein paar Stichen kann man die Arme an der Seite abnähen oder Bänder oder Blumen am Ohr usw. befestigen. Fertig!
 					<img src="../../../img/ostern/2017/text/sly-basteln5.jpg" alt="">
 				</p>
-			</oster-ei>
+			</oster-text>
 		</oster-bild>
-		<oster-bild src="../../../img/ostern/2017/huff-suchbild.jpg">
+		<oster-bild slot="oster-bild"src="../../../img/ostern/2017/huff-suchbild.jpg">
 			<h2>Hufflepuff</h2>
-			<oster-ei top=24 left=490 height=29 width=19>
+			<oster-ei slot="oster-ei" top="24" left="490" height="29" width="19"></oster-ei>
+			
+			<oster-text slot="oster-text">
 				<h3> Erinnerungen des Nicholas Flamel</h3>
 
 				<p><i>Es war ein sonniger, klarer Morgen und der kleine Nicholas war auf dem Weg zu einem nahgelegenen Flüsschen, um angeln zu gehen. Seine Mutter hatte ihn früh losgeschickt, um wenn möglich eine Forelle oder einen Lachs für das jährliche Karfreitagsmenü zu fangen. Bisher hatte dies immer sein Vater gemacht und Nicholas durfte ihn ab und zu begleiten. Inzwischen war Nicholas mit seinen acht Jahren nach Empfinden seiner Eltern alt genug um diese Aufgabe zu übernehmen und er war sehr stolz darauf. Er hofft seine Mutter nicht nur mit einer, sondern gleich drei Forellen überraschen zu können - für jedes Familienmitglied eine eigene. Nicholas hoffte auf das leckere Rezept aus dem letzten Jahr.</p></i>
@@ -214,11 +225,13 @@
 					"Nicholas, mein Freund, wir haben geschafft, was so viele vor uns versucht haben. Wir sind nicht gescheitert, unzählige Stunden haben wir hier zusammen verbracht, diskutiert und getestet, so oft gescheitert, dass ich es gar nicht mehr zählen kann. Aber dieser eine Moment jetzt gerade, der war es wert. Sicher wird werden mit dieser Erkenntnis die Welt verändern, aber was mir viel wichtiger ist, dass ist deine Unterstützung, die Zusammenarbeit mit dir, die Freundschaft und das Teilen gleicher Werte. Danke dafür!" Und plötzlich standen beiden Männern die Tränen in den Augen und sie lagen sich halb lachend, halb weinend in den Armen.</i></p>
 
 				<p>Nach dieser Erinnerung saß Nicholas noch lange in seinem Sessel neben dem Kamin, schaute aus dem Fenster und ließ die vergangenen Tage, Monate und Jahre Revue passieren. Was hatte er alles in seinem Leben erlebt?! Kriege, Hungersnöte, Folter und Tod, aber auch den Fortschritt, Veränderungen und Entwicklungen. Manchmal hatte er vergessen, wie kostbar die kleinen, persönlichen Erinnerungen waren, die ihn zu dem Menschen gemacht hatten, der er heute war.</p>
-			</oster-ei>
+			</oster-text>
 		</oster-bild>
-		<oster-bild src="../../../img/ostern/2017/gryff-suchbild.jpg">
+		<oster-bild slot="oster-bild" src="../../../img/ostern/2017/gryff-suchbild.jpg">
 			<h2>Gryffindor</h2>
-			<oster-ei top=34 left=587 height=30 width=14>
+			<oster-ei slot="oster-ei" top="34" left="587" height="30" width="14"></oster-ei>
+			
+			<oster-text slot="oster-text">
 				<h3>Ostern im Wandel der Zeit</h3>
 
 				<p>Cäcilia Wenzel war fünf Jahre alt, als sie ihr erstes Osternest selbst bastelte. Sie nahm kleine Stöcke
@@ -315,15 +328,17 @@
 					Eierbecher. Natürlich kannst du sie noch nach Belieben verzieren.</p>
 
 				<p><img src="../../../img/ostern/2017/text/gryff_basteln.jpg" alt="Selbst gemachte Eierbecher"></p>
-			</oster-ei>
+			</oster-text>
 		</oster-bild>
-		<oster-bild src="../../../img/ostern/2017/ende.jpg">
+		<oster-bild slot="oster-bild" src="../../../img/ostern/2017/ende.jpg">
 			<h2>Frohe Ostern!</h2>
-			<oster-ei top=146 left=336 height=42 width=29>
+			<oster-ei slot="oster-ei" top=146 left=336 height=42 width=29></oster-ei>
+			
+			<oster-text slot="oster-text">
 				<h3>Herzlichen Glückwunsch!</h3>
 				<p>Ihr habt es geschafft und alle Überraschungen der diesjährigen Ostereiersuche gefunden.</p>
 				<p>Die Häuser des HP-FC wünschen allen ein frohes Osterfest!</p>
-			</oster-ei>
+			</oster-text>
 		</oster-bild>
 	</oster-projekt>
 	
