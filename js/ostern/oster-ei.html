@@ -50,7 +50,8 @@
 				name: String,
 			},
 			listeners: {
-				tap: 'hide'
+				tap: 'hide',
+				"show-text": 'handleShowText',
 			},
 			hasInvalidPositionOrSize: function(top, left, height, width) {
 				return top < 0 || left < 0 || height < 0 || width < 0;
