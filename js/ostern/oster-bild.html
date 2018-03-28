@@ -17,7 +17,7 @@
 			mandatory element <code>h2</code> as first child.
 		</template>
 		<div hidden$="{{!active}}">
-		    <img src="{{src}}" alt="">
+			<img src="{{src}}" alt="">
 			<slot name="oster-ei"></slot>
 			<slot name="oster-text"></slot>
 		</div>
@@ -72,7 +72,6 @@
 						if (this.name) {
 							number = (this.name.charCodeAt(0) + i) % 5;
 						}
-
 						switch (number) {
 							case 0:
 								image += 'blau';
@@ -114,7 +113,7 @@
 			handleTapEvent: function(event) {
 				var coordinates = this.getBoundingClientRect();
 				var left = event.detail.x - Math.floor(coordinates.left);
-			    var top = event.detail.y - Math.floor(coordinates.top);
+				var top = event.detail.y - Math.floor(coordinates.top);
 				for (var i = 0; i < this.eis.length; i++) {
 					this.eis[i].handleTap(top, left);
 				}
