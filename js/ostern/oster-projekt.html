@@ -160,7 +160,6 @@
             	this.currentShownName = this.currentShown.querySelector('h2').textContent;
             },
            	handleShowEi: function(event) {
-           		console.log('handleShowEi');
            		var ei = Polymer.dom(event).localTarget;
            		var text = Polymer.dom(event).event.srcElement.nextElementSibling;
             	var bild = Polymer.dom(ei).parentNode;
@@ -168,7 +167,6 @@
             	this.storeCookie();
             },
             handleHideEi: function() {
-            	console.log('handleHideEi');
             	this.currentShown = this.currentImage;
             	this.currentShownName = this.currentShown.name;
             },
